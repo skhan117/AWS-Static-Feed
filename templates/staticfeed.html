@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AWS S3 Static Feed</title>
+	</head>
+	<body>
+		<div class="content">
+				<h3>CNT4713 Final Project - Static Feed Application</h3>
+				<h4>Implemented by Shaan Khan, Panther ID 6112001</h4>
+				<p>This static feed application serves files from an AWS S3 bucket; it was written in Python and makes use of the Flask framework. It was configured and deployed to the cloud via AWS ElasticBeanstalk as an EC2 instance.</p>
+				<p>Auth0 was used for authentication via an accessory application also written using Python and Flask. This application, which handles logins and logouts, was configured and deployed to the cloud via Heroku.</p>
+				<p>Below are files hosted on my AWS S3 account. Click on a file to download.</p>
+				<ul>
+					{% for item in contents %}
+						<li>
+							<a href="/download/{{ item.Key }}"> {{ item.Key }} </a>
+						</li>
+					{% endfor %}
+				</ul>
+				<!-- To log out of the StaticFeed app, the user is directed to the proper Auth0 logout endpoint. -->
+				<a href="https://skhan117.us.auth0.com/v2/logout">Logout</a>
+		</div>
+	</body>
+</html>
