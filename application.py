@@ -1,6 +1,6 @@
 # This is a static feed application that allows a user to download files from
 # an Amazon S3 bucket. Login and logout is handled by an Auth0-based accessory application,
-# which will handle logins and logouts, and is located at http://github.com/skhan117. 
+# that is located at http://github.com/skhan117. 
 
 from flask import Flask, render_template, request, redirect, send_file
 from s3_connector import list_files, download_file
