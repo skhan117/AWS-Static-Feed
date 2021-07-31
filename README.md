@@ -4,23 +4,20 @@ This cloud-based application allows a user to read and download files from an AW
 
 ## Installation
 
-First, ensure that python3, virtualenv, git, and AWSEBCLI are installed on your machine.
-
-If necessary install these libraries:
+First, ensure that python3, virtualenv, git, and AWSEBCLI are installed on your machine. If necessary install these libraries. 
 
 ```pip install virtualenv```
-
 ```pip install awsebcli```
 
-To properly setup AWS CLI (command-line interface) on your machine, follow the instructions on the AWS tutorials page. 
+To properly setup AWS CLI (command-line interface) on your machine, you will need to follow the instructions for setup on the AWS tutorials page. It is also highly recommended that you cover the basics of AWS S3 and AWS Elastic Beanstalk, since we will be making use of these services. 
 
-Now, let's set up our app. Enter Terminal on Mac or the command line on Windows. Navigate to your home directory. Now, make a new directory for the project and cd into it.
+Now, let's set up our app. Enter Terminal on Mac or the command line on Windows. Navigate to your home director, then make a new directory for the project and cd into it.
 
 ```mkdir MyStaticFeed```
 
 ```cd MyStaticFeed```
 
-Start a virtual environment for this project named "venv". A virtual environment (or virtualenv) allows an application to have its own set of installed packages that are independent of those on your machine. When we deploy this app to AWS Elastic Beanstalk, this virtual environment will tell AWS what packages are needed for the application to run on the cloud. 
+Start a virtual environment for this project named "venv". A virtual environment (or virtualenv) allows an application to have its own set of installed packages that are independent of those on your machine. When we deploy this app to AWS Elastic Beanstalk, this virtual environment will tell AWS what packages are needed for the application to run. AWS will automatically take care of these dependencies on our behalf.  
 
 ```virtuelenv venv```
 
