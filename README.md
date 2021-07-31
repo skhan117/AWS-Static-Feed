@@ -56,6 +56,7 @@ Now we'll initialize the application for AWS EB.
 It is recommended that you the region argument to something closer to you; see the AWS Elastic Beanstalk quickstart tutorial for details.
 
 Create an environment where will we will deploy our source code. Our environment will upload our source code to AWS Elastic Beanstalk and automatically provision EC2 instances and load balancers for us.
+
 ```eb create myflaskappenv```
 
 Go to your AWS Elastic Beanstalk console to confirm that the application is up and running. 
