@@ -4,7 +4,9 @@ This cloud-based application allows a user to read and download files from an AW
 
 ## Installation
 
-First, ensure that python3, virtualenv, git, and AWSEBCLI are installed on your machine. If necessary install these libraries. 
+First, ensure that pip, virtualenv, git, and AWSEBCLI are installed on your machine. If necessary install these libraries. 
+
+```sudo apt install python-pip```
 
 ```pip install virtualenv```
 
