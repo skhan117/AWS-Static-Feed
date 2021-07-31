@@ -7,6 +7,7 @@ This cloud-based application allows a user to read and download files from an AW
 First, ensure that python3, virtualenv, git, and AWSEBCLI are installed on your machine. If necessary install these libraries. 
 
 ```pip install virtualenv```
+
 ```pip install awsebcli```
 
 To properly setup AWS CLI (command-line interface) on your machine, you will need to follow the instructions for setup on the AWS tutorials page. It is also highly recommended that you cover the basics of AWS S3 and AWS Elastic Beanstalk, since we will be making use of these services. 
