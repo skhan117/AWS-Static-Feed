@@ -12,7 +12,7 @@ First, ensure that python3, virtualenv, git, and AWSEBCLI are installed on your 
 
 To properly setup AWS CLI (command-line interface) on your machine, you will need to follow the instructions for setup on the AWS tutorials page. It is also highly recommended that you cover the basics of AWS S3 and AWS Elastic Beanstalk, since we will be making use of these services. 
 
-Now, let's set up our app. Enter Terminal on Mac or the command line on Windows. Navigate to your home director, then make a new directory for the project and cd into it.
+Now, let's set up our app. Enter Terminal on Mac or the command line on Windows. Navigate to your home directory, then create a new directory for the project and cd into it.
 
 ```mkdir MyStaticFeed```
 
