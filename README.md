@@ -48,12 +48,12 @@ Now open a web browser and enter "http://localhost:8008/staticfeed" into your se
 
 To exit the app, hit Control-C. 
 
-We now have an application that can run on our local machine, but we need to be able to deploy this application to AWS Elastic Beanstalk. If you haven't already done so, it is recommended that you follow a tutorial on deploying a Flask app on the AWS site. 
+We now have a static feed application that can run on our local machine, but we need to be able to deploy this application to AWS Elastic Beanstalk. 
 
 Now we'll initialize the application for AWS EB. 
 
 ```eb init myflaskapp -p python-2.7 --region us-west-1```
-It is recommended that you the region argument to something closer to you; see AWS Elastic Beanstalk tutorials for details.
+It is recommended that you the region argument to something closer to you; see the AWS Elastic Beanstalk quickstart tutorial for details.
 
 Create an environment where will we will deploy our source code. Our environment will upload our source code to AWS Elastic Beanstalk and automatically provision EC2 instances and load balancers for us.
 ```eb create myflaskappenv```
