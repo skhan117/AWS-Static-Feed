@@ -37,6 +37,7 @@ We need to install the proper libraries in the application's virtual environment
 You will need to edit line 14 in application.py to point to the S3 bucket in your AWS account that you want to access.
 
 ```BUCKET = os.getenv("TARGET_S3_BUCKET")```
+
 Change TARGET_S3_BUCKET to the name of your bucket, and make sure to have permissions setup for proper access on AWS S3.
 
 Get the application up and running on your machine with the following command. The application will be accessible on your machine on port 8004.
