@@ -68,6 +68,6 @@ If you want to edit your source code to update your app, do so on your local mac
 
 ```eb deploy```
 
-When we no longer need our application to run, we will need to destroy the application on AWS. 
+When we no longer need our application to run, we will need to terminate the application environment on AWS. 
 
 ```eb terminate myflaskappenv```
