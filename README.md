@@ -61,10 +61,13 @@ Create an environment where will we will deploy our source code. Our environment
 Go to your AWS Elastic Beanstalk console to confirm that the application is up and running. 
 
 Now we'll open our application, which is now running on AWS, in a new web browser window. 
+
 ```eb open```
 
 If you want to edit your source code to update your app, do so on your local machine, then re-deploy to AWSEB. 
+
 ```eb deploy```
 
 When we no longer need our application to run, we will need to destroy the application on AWS. 
+
 ```eb terminate myflaskappenv```
